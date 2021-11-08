@@ -31,7 +31,6 @@
                         </p>
                     </a>
                 </li>
-                <?php if($this->session->userdata('level')=='Admin'): ?>
                 <li class="nav-item">
                     <a href="<?=base_url('menu/profil_sekolah');?>" class="nav-link <?=isset($mProfil)?'active':'';?>">
                         <i class="nav-icon fas fa-edit"></i>
@@ -40,7 +39,6 @@
                         </p>
                     </a>
                 </li>
-                <?php endif; ?>
                 <li class="nav-item menu-open">
                     <a href="#" class="nav-link <?=isset($mSiswa)?'active':'';?>">
                         <i class="nav-icon fas fa-folder-open"></i>

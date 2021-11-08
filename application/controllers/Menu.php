@@ -26,7 +26,6 @@ class Menu extends CI_Controller {
 	}
 
 	public function profil_sekolah(){
-		hakAksesAdmin();
 		$data['mProfil'] = true;
 		$data['row'] = $this->profil_m->getById(1);
 		$data['content'] = 'profil_sekolah';

@@ -154,7 +154,7 @@
                         </div>
                     </div>
                     <!-- /.card-body -->
-
+                    <?php if($this->session->userdata('level')=='Admin'): ?>
                     <div class="card-footer">
                         <?php 
 							$data = array(
@@ -165,6 +165,7 @@
 							echo form_button($data);
 						?>
                     </div>
+                    <?php endif; ?>
                     <?= form_close(); ?>
                 </div>
                 <!-- /.card -->
